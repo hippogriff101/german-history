@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <title>German History - 1890-1945  </title>
-</head>
-<body>
-    <h1>Welcome to AQA GCSE History' Democracy and Dictatorship</h1>
-    <h3><i>unofficial - made by <a href="https://freddieyershon.co.uk">Freddie</a></i></h3>
-    <a href="/">back home</a>
-    <hr>
+{% extends "base.html" %}
+{% block content %}
     <h2>The Kaiser and his personality</h2>
     <p>When Germany was unified as a nation in 1871, the king of the most powerful state, Prussia, became its new ruler, or <b>Kaiser</b>.</p>
     <img src="{{ url_for('static', filename='images/germany1871-1918.png')}}" width="500px" height="auto">
@@ -29,5 +18,13 @@
             <td>Parliament elected by men over 25.<br>Both debated and voted on laws drawn up by Kaiser and ministers.</td>
         </tr>
     </table>
-</body>
-</html>
+    <br>
+    <h4>Kaiser Wilhelm II</h4>
+    <ul>
+        <li>Spent most of his youth in the army</li>
+        <li>Keen to maintain a powerful army and build up a large navy</li>
+        <li>Took great pride in leading the army and was very interested in military tactics</li>
+        <li>Wanted Germany to be a global power and have an empire to rival Britain’s; this idea is Weltpolitik – world policy</li>
+        <li>Was from Prussia; militarism – the belief that a country should have strong armed forces – was important to Prussia; Prussian generals, army officers and tactics formed the basis of the new united Germany</li>
+    </ul>
+{% endblock %}
