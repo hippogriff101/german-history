@@ -1,30 +1,60 @@
 {% extends "base.html" %}
 {% block content %}
     <h2>The Kaiser and his personality</h2>
-    <p>When Germany was unified as a nation in 1871, the king of the most powerful state, Prussia, became its new ruler, or <b>Kaiser</b>.</p>
-    <img src="{{ url_for('static', filename='images/germany1871-1918.png')}}" width="500px" height="auto">
+
+    <h4>Democracy vs dictatorship</h4>
+    <p>The course covers how Germany went from a monarchy under Kaiser Wilhelm II, to a democracy (the Weimar Republic) after WWI, to a Nazi dictatorship under Hitler.</p>
+    <ul>
+        <li><b>Democracy</b> - a system of government where people vote for their leaders. People typically have more rights and freedoms.</li>
+        <li><b>Dictatorship</b> - a system of government where one person or small group has absolute power and controls all aspects of society.</li>
+    </ul>
+
+    <h4>How Germany was created</h4>
+    <p>Germany used to be a collection of states, all run by different rulers. In 1871 they united. The king of the most powerful state, Prussia, became its new ruler, or <b>Kaiser</b>. Kaiser Wilhelm II came to the throne in 1888.</p>
+    <img src="{{ url_for('static', filename='images/germany1871-1918.png') }}" width="500px" height="auto">
+    <p>Wilhelm II was the grandson of Queen Victoria of Britain and the cousin of Tsar Nicholas II of Russia.</p>
+
     <h4>Parliamentary Government</h4>
     <table>
         <tr>
-            <td>Kaiser</th>
-            <th>Chancellor</th>
-            <th>Bundesrat</th>
-            <th>Reichstag</th>
+            <th>Kaiser<br><i>(leader of Germany)</i></th>
+            <td>Ruled over all the states of Germany. He controlled the army, appointed and could sack the Chancellor, and could <b>veto</b> (block) any law passed by the Reichstag. Could ignore government advice and made all military and foreign policy decisions.</td>
         </tr>
         <tr>
-            <td>Could ignore government advice and made his own decisions. He made all military and foreign policy decisions</td>
-            <td>(Chief minister) and ministers advised Kaiser</td>
-            <td>Made up of representatives from each state</td>
-            <td>Parliament elected by men over 25.<br>Both debated and voted on laws drawn up by Kaiser and ministers.</td>
+            <th>Chancellor<br><i>(chief minister)</i></th>
+            <td>Appointed by the Kaiser. He and the ministers advised the Kaiser, and he decided which laws the Reichstag would discuss and vote on.</td>
+        </tr>
+        <tr>
+            <th>Bundesrat</th>
+            <td>Made up of representatives from each state; helped make and pass laws.</td>
+        </tr>
+        <tr>
+            <th>Reichstag<br><i>(parliament)</i></th>
+            <td>Elected by men over 25.<br>Debated and voted on laws drawn up by the Kaiser and ministers, but could not create its own laws.</td>
+        </tr>
+        <tr>
+            <th>Electorate</th>
+            <td>Men aged over 25, who voted for members of the Reichstag. The people they voted for belonged to political parties.</td>
         </tr>
     </table>
-    <br>
+
+    <h4>How Prussia boosted the Kaiser’s power</h4>
+    <ul>
+        <li><b>Prussian militarism</b> - Prussia had the strongest military of all the German states, with the largest army and up-to-date weapons. The Kaiser took personal charge of the army, and it swore an oath of loyalty to him, not to Germany.</li>
+        <li><b>The Bundesrat</b> - 14 votes were needed to block a law. Prussia had 17 members, more than enough to block any law the Kaiser disagreed with.</li>
+        <li><b>The Junkers</b> - powerful Prussian landowning nobles. They held top jobs in the civil service, diplomacy and the military, and were loyal to the Kaiser.</li>
+    </ul>
+
     <h4>Kaiser Wilhelm II</h4>
+    <img src="{{ url_for('static', filename='images/doc/page2_1.png') }}" alt="Kaiser Wilhelm II" width="160px" height="auto">
     <ul>
         <li>Spent most of his youth in the army</li>
         <li>Keen to maintain a powerful army and build up a large navy</li>
         <li>Took great pride in leading the army and was very interested in military tactics</li>
-        <li>Wanted Germany to be a global power and have an empire to rival Britain’s; this idea is Weltpolitik – world policy</li>
-        <li>Was from Prussia; militarism – the belief that a country should have strong armed forces – was important to Prussia; Prussian generals, army officers and tactics formed the basis of the new united Germany</li>
+        <li>Wanted Germany to be a global power and have an empire to rival Britain’s; this idea is <b>Weltpolitik</b> – world policy</li>
+        <li>Was from Prussia; <b>militarism</b> – the belief that a country should have strong armed forces – was important to Prussia; Prussian generals, army officers and tactics formed the basis of the new united Germany</li>
     </ul>
+
+    <h4>Exam tip: "Describe two..." [4 marks]</h4>
+    <p>e.g. <i>Describe two problems faced by Kaiser Wilhelm II’s governments in ruling Germany up to 1914.</i> Identify two problems (e.g. the growth of trade unions, the rise of the SPD) and write 2-3 sentences on each: what the problem was, and why it was a problem.</p>
 {% endblock %}
