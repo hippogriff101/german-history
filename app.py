@@ -24,7 +24,7 @@ lessons = [
         "url": "/weimar"
     },
     {
-        "name": "Political opposition and the Treaty of VersaillesThe impact of the First World War",
+        "name": "Political opposition and the Treaty of Versailles",
         "url": "/opposition"
     },
     {
@@ -37,7 +37,7 @@ lessons = [
     },
     {
         "name": "Stresemann and the 'Golden Years' (1924-29)",
-        "url": "/munich"
+        "url": "/stresemann"
     },
     {
         "name": "Reorganising the Nazi Party: the 'Lean Years' (1924-28)",
@@ -49,10 +49,14 @@ lessons = [
     },
 ]
 
+@app.context_processor
+def inject_lessons():
+    return {"lessons": lessons}
+
 
 @app.route('/')
 def home():
-    return render_template('index.html', lessons=lessons)
+    return render_template('index.html')
 
 # Lesson 1
 @app.route('/kaiser')

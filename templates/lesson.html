@@ -1,5 +1,19 @@
+<!--Claude Assisted this page!-->
 {% extends "base.html" %}
 {% block content %}
-<a href="/">back home</a>
-<main>{% block content %}{% endblock %}</main>
+    <a href="/">back home</a>
+
+    {% block lesson %}{% endblock %}
+    <hr>
+    <nav>
+        {% for lesson in lessons if lesson.url == request.path %}
+            {% set i = lessons.index(lesson) %}
+            {% if i > 0 %}
+                <a href="{{ lessons[i - 1].url }}">&larr; {{ lessons[i - 1].name }}</a>
+            {% endif %}
+            {% if i < lessons|length - 1 %}
+                <a href="{{ lessons[i + 1].url }}">{{ lessons[i + 1].name }} &rarr;</a>
+            {% endif %}
+        {% endfor %}
+    </nav>
 {% endblock %}
