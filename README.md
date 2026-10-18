@@ -10,12 +10,12 @@ This is a simple Flask Application that renders some HTML files about Germany fr
 
 - [x] style it so it looks less s\*it
 
-- [] Add 'Lesson Finished' button to the end of every page
+- [ ] Add 'Lesson Finished' button to the end of every page
 
-- [] Calculate % of lessons finished for end of index
+- [ ] Calculate % of lessons finished for end of index
 
-- [] On final lesson complete celerbate with css confeti (that random css libary thing)
+- [ ] On final lesson complete celerbate with css confeti (that random css libary thing)
 
-- [] Quiz?
+- [ ] Quiz?
 
-- [] log in in with HCA and track stats? (admin view for me)
+- [ ] log in in with HCA and track stats? (admin view for me)
