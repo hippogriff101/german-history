@@ -2,9 +2,57 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+lessons = [
+    {
+        "name": "Kaiser Wilhelm II",
+        "url": "/kaiser"
+    },
+    {
+        "name": "German society and economy in 1890",
+        "url": "/society"
+    },
+    {
+        "name": "Domestic reforms, Weltpolitik and the Naval Laws",
+        "url": "/weltpolitik"
+    },
+    {
+        "name": "The impact of the First World War",
+        "url": "/ww1"
+    },
+    {
+        "name": "The Weimar Constitution",
+        "url": "/weimar"
+    },
+    {
+        "name": "Political opposition and the Treaty of VersaillesThe impact of the First World War",
+        "url": "/opposition"
+    },
+    {
+        "name": "1923: Invasion of the Ruhr and hyperinflation",
+        "url": "/ruhr"
+    },
+    {
+        "name": "The early Nazi Party and the Munich Putsch",
+        "url": "/munich"
+    },
+    {
+        "name": "Stresemann and the 'Golden Years' (1924-29)",
+        "url": "/munich"
+    },
+    {
+        "name": "Reorganising the Nazi Party: the 'Lean Years' (1924-28)",
+        "url": "/lean-years"
+    },
+    {
+        "name": "The Great Depression and Nazi propaganda (1929-32)",
+        "url": "/depression"
+    },
+]
+
+
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html', lessons=lessons)
 
 # Lesson 1
 @app.route('/kaiser')

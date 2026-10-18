@@ -1,15 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2><a href="/kaiser">go to kaiser</a></h2>
-    <h2><a href="/society">go to society and economy</a></h2>
-    <h2><a href="/weltpolitik">go to weltpolitik</a></h2>
-    <h2><a href="/ww1">go to the first world war</a></h2>
-    <h2><a href="/weimar">go to the weimar constitution</a></h2>
-    <h2><a href="/opposition">go to political opposition and the treaty of versailles</a></h2>
-    <h2><a href="/ruhr">go to the ruhr and hyperinflation</a></h2>
-    <h2><a href="/munich">go to the munich putsch</a></h2>
-    <h2><a href="/stresemann">go to stresemann and the golden years</a></h2>
-    <h2><a href="/lean-years">go to the lean years</a></h2>
-    <h2><a href="/depression">go to the great depression and propaganda</a></h2>
-
+<div class="lessons">
+    {% for lesson in lessons %}
+        <div class="lesson">
+        <h3>{{ lesson.name }}</h2>
+        <p>{{ lesson.description }}</p>
+        <a href="{{ lesson.url }}">Go to Lesson</a>
+        </div>
+    {% endfor %}
+</div>
 {% endblock %}
