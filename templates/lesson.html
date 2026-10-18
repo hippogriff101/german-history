@@ -5,15 +5,17 @@
 
     {% block lesson %}{% endblock %}
     <hr>
-    <nav>
+    <center>
+    <nav><table><tr>
         {% for lesson in lessons if lesson.url == request.path %}
             {% set i = lessons.index(lesson) %}
             {% if i > 0 %}
-                <a href="{{ lessons[i - 1].url }}">&larr; {{ lessons[i - 1].name }}</a>
+                <th><a href="{{ lessons[i - 1].url }}">&larr; {{ lessons[i - 1].name }}</a></th>
             {% endif %}
             {% if i < lessons|length - 1 %}
-                <a href="{{ lessons[i + 1].url }}">{{ lessons[i + 1].name }} &rarr;</a>
+                <th><a href="{{ lessons[i + 1].url }}">{{ lessons[i + 1].name }} &rarr;</a></tr>
             {% endif %}
         {% endfor %}
-    </nav>
+    </tr></table></nav>
+    </center>
 {% endblock %}

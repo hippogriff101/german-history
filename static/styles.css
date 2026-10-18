@@ -1,11 +1,50 @@
+:root {
+    --cream: #FAEBD7;
+    --blue: #B7E7FC;
+    --pink: #FFD3F0;
+    --yellow: #F5C700;
+    --red: #BA1650;
+}
+
 body{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: var(--cream);
+    color: var(--red);
+}
+
+a {
+    color: var(--red);
+}
+
+a:hover {
+    background-color: var(--yellow);
+    padding: 0;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid var(--red);
 }
 
 table, th, td, img {
-  border:1px solid black;
+  border:1px solid var(--red);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--pink);
+}
+
+td {
+    background-color: white;
+}
+
+th, td {
+    padding: 6px;
 }
 
 ul {
@@ -29,7 +68,11 @@ ul {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     padding: 10px;
+    background-color: var(--blue);
+}
 
+.lesson:nth-child(even) {
+    background-color: var(--pink);
 }
 
 .lesson:hover {
